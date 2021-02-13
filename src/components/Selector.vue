@@ -39,8 +39,8 @@
 <script>
 export default {
   setup() {
-    const bduaName = "BDUA MinSalud";
-    const sisbenName = "Sisben";
+    const bduaName = "BDUA";
+    const sisbenName = "SISBEN";
     const entIntName = "Entidades Integradas";
     return {
       bduaName,
