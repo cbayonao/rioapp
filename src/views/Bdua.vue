@@ -14,6 +14,7 @@
       tabindex="0"
     ></iframe>
   </div>
+  <h2>Prueba Github Actions</h2>
 </template>
 
 <script>
