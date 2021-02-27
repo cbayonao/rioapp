@@ -1,0 +1,22 @@
+service: aws-node-puppeteer
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+plugins:
+  - serverless-offline
+  - serverless-plugin-include-dependencies
+  - serverless-plugin-chrome
+
+package:
+  exclude:
+    - node_modules/**
+    - node_modules/puppeteer/.local-chromium/**
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: /hello
+          method: get
